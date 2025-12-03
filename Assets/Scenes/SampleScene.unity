@@ -243,7 +243,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4782edb33ad4f7d4882dde55eeb66856, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poolArray: []
+  poolArray:
+  - poolSize: 30
+    prefab: {fileID: 6230731142884202588, guid: 75536c91021ea1942a844dfe91b80ea8, type: 3}
+    componentType: IFireable
 --- !u!4 &1552331428
 Transform:
   m_ObjectHideFlags: 0
@@ -267,6 +270,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1980504608111926612, guid: 75459d3ce0e26104dbae6bdedc2fea0c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 1980504608111926612, guid: 75459d3ce0e26104dbae6bdedc2fea0c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.25
+      objectReference: {fileID: 0}
     - target: {fileID: 7357660523588775269, guid: 75459d3ce0e26104dbae6bdedc2fea0c, type: 3}
       propertyPath: m_Name
       value: enemy

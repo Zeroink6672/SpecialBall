@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: WeaponDetails_
   m_EditorClassIdentifier: 
   weaponShootPosition: {x: 0, y: 0, z: 0}
+  weaponCurrentAmmo: {fileID: 11400000, guid: 67d79aadf05829343895d438510e9d58, type: 2}
   weaponFireRate: 0.5
   weaponPrechargeTime: 0
