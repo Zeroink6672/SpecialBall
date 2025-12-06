@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [CreateAssetMenu(fileName ="WeaponDetails_",menuName ="Scriptable Objects/Attack/Weapon Details")]
-public class NewBehaviourScript : ScriptableObject
+public class weaponDetailsOS : ScriptableObject
 {
     [Space(10)]
     [Header("WEAPON BASE DETAILS")]

@@ -21,8 +21,8 @@ MonoBehaviour:
   ammoChargeTime: 0
   ammoChargeMaterial: {fileID: 0}
   ammoDamage: 1
-  ammoSpeedMin: 15
-  ammoSpeedMax: 15
+  ammoSpeedMin: 1
+  ammoSpeedMax: 1
   ammoRange: 12
   ammoRotationSpeed: 1
   ammoSpreadMin: 2
