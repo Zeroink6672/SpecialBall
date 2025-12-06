@@ -51,7 +51,7 @@ public class Ammo : MonoBehaviour, IFireable
         DisableAmmo();
     }
 
-    public void InitialiseAmmo(AmmoDetailsSO ammoDetails, float aimAngle, float weaponAimAngle,float ammoSpeed, Vector3 weaponAimDirectionVector, bool overrideAmmoMovement = false)
+    public void InitialiseAmmo(AmmoDetailsSO ammoDetails, float aimAngle, float weaponAimAngle, Vector3 weaponAimDirectionVector, bool overrideAmmoMovement = false)
     {
         #region Ammo
         this.ammoDetails = ammoDetails;
@@ -113,7 +113,7 @@ public class Ammo : MonoBehaviour, IFireable
         {
             fireDirectionAngle = weaponAimAngle;
         }
-        fireDirectionAngle += spreadToggle * randomSpread;//子弹射出角度随机偏移
+        fireDirectionAngle += spreadToggle * randomSpread;//子弹射出角度随机便宜
 
         transform.eulerAngles = new Vector3(0f, 0f, fireDirectionAngle);//设置子弹Z轴转角
 
