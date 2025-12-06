@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PlayerDetector : MonoBehaviour
+public class enemyDetectPlayer : MonoBehaviour
 {
     public Transform parentObject; // 父对象
     public float detectionRadius = 5f; // 检测半径
@@ -35,17 +35,18 @@ public class PlayerDetector : MonoBehaviour
         }
         else
         {
+            Debug.Log("没找到！");
             directionToPlayer = Vector3.zero; // 如果没有找到 player，方向向量设置为零
         }
 
         // 可选：在调试模式下输出方向向量
-        Debug.DrawRay(parentObject.position, directionToPlayer, Color.red);
+        //Debug.Log(directionToPlayer);
     }
 
     private void DetectNearestPlayer()
     {
         // 获取父对象位置
-        Vector2 parentPosition = parentObject.position;
+        Vector3 parentPosition = parentObject.position;
 
         // 初始化最近 player 的距离和 Transform
         float nearestDistance = Mathf.Infinity;
@@ -56,10 +57,10 @@ public class PlayerDetector : MonoBehaviour
 
         foreach (Collider2D collider in colliders)
         {
-            if (collider.CompareTag("player"))
+            if (collider.CompareTag("Player"))
             {
                 // 计算父对象与当前 player 的距离
-                float distance = Vector2.Distance(parentPosition, collider.transform.position);
+                float distance = Vector3.Distance(parentPosition, collider.transform.position);
 
                 // 如果当前 player 更近，更新最近 player
                 if (distance < nearestDistance)
