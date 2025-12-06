@@ -47,11 +47,25 @@ public static class HelperUtilities
 #endif
     }
 
-    public static Vector3 GetDireactionVectorFromAngle(float angle)//从角度得出方向
+
+    //从角度得出方向
+    public static Vector3 GetDireactionVectorFromAngle(float angle)
     {
         Vector3 directionVector=new Vector3(Mathf.Cos(Mathf.Deg2Rad*angle),Mathf.Sin(Mathf.Deg2Rad*angle),0f);
         return directionVector;
     }
+
+    //从方向得出角度
+    public static float GetAngleFromVector(Vector3 vector)
+    {
+        float radians = Mathf.Atan2(vector.y, vector.x);
+
+        float degrees = radians * Mathf.Rad2Deg;
+
+        return degrees;
+
+    }
+
 }
 public static class Settings
 {
