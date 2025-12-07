@@ -17,13 +17,13 @@ MonoBehaviour:
   ammoSprite: {fileID: -2413806693520163455, guid: 11849107fa131084f840868d6d5b33dc, type: 3}
   ammoPrefabArray:
   - {fileID: 6230731142884202588, guid: 75536c91021ea1942a844dfe91b80ea8, type: 3}
-  ammoMaterial: {fileID: 2100000, guid: 6528463d4feff7f4493142650464d648, type: 2}
-  ammoChargeTime: 0
+  ammoMaterial: {fileID: 0}
+  ammoChargeTime: 0.1
   ammoChargeMaterial: {fileID: 0}
   ammoDamage: 1
-  ammoSpeedMin: 1
+  ammoSpeedMin: 4
   ammoSpeedMax: 1
-  ammoRange: 12
+  ammoRange: 8
   ammoRotationSpeed: 1
   ammoSpreadMin: 2
   ammoSpreadMax: 4
@@ -31,8 +31,8 @@ MonoBehaviour:
   ammoSpawnAmountMax: 1
   ammoSpawnIntervalMax: 0
   ammoSpawnIntervalMin: 0
-  isAmmoTrail: 0
-  ammoTrailTime: 0
+  isAmmoTrail: 1
+  ammoTrailTime: 0.5
   ammoTrialMaterial: {fileID: 0}
-  ammoTrailStartWidth: 0
-  ammoTrailEndWidth: 0
+  ammoTrailStartWidth: 0.2
+  ammoTrailEndWidth: 0.001
